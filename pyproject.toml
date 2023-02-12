@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "frosthaven-tracker-be"
+version = "0.1.0"
+description = "API and data layer for the Frosthaven Campaign Tracker"
+authors = ["Austin Osborne <austin@aiqengineering.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "frosthaven_tracker_be"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pony = "^0.7.16"
+fastapi = "^0.91.0"
+uvicorn = "^0.20.0"
+psycopg2 = "^2.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
